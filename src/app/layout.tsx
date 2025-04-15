@@ -34,6 +34,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://matioss.fr/"
+  },
+  verification: {
+    google: "google-site-verification=jTqdr4CClpKBC2uovnm9UQGiIM3h5SEk2KUaKOtmmTs"
   }
 };
 
