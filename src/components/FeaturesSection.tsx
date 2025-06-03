@@ -1,24 +1,29 @@
 import { FaClock, FaChartLine, FaBalanceScale, FaLightbulb } from 'react-icons/fa';
+import Link from 'next/link';
 
 const features = [
   {
     icon: FaClock,
     title: "Rapidité d'exécution",
+    link: "/rapidite-execution",
     description: "Apprenez à accomplir vos tâches plus efficacement sans précipitation grâce aux méthodes ViteButNotTooMuch."
   },
   {
     icon: FaChartLine,
     title: "Productivité optimisée",
+    link: "/productivite-optimisee",
     description: "Nos techniques éprouvées vous aident à maximiser votre rendement tout en préservant votre énergie."
   },
   {
     icon: FaBalanceScale,
     title: "Équilibre qualité-vitesse",
+    link: "/equilibre-qualite-vitesse",
     description: "Trouvez le juste milieu entre rapidité et précision avec l'approche ViteButNotTooMuch."
   },
   {
     icon: FaLightbulb,
     title: "Méthodes innovantes",
+    link: "/methodes-innovantes",
     description: "Découvrez des stratégies inédites pour accélérer vos processus sans compromettre le résultat final."
   }
 ];
@@ -42,7 +47,15 @@ export default function FeaturesSection() {
               <div className="text-blue-600 mb-4">
                 <feature.icon className="w-12 h-12" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                {feature.link ? (
+                  <Link href={feature.link} className="hover:text-blue-600 transition-colors">
+                    {feature.title}
+                  </Link>
+                ) : (
+                  feature.title
+                )}
+              </h3>
               <p className="text-gray-700">{feature.description}</p>
             </div>
           ))}
