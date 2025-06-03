@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import Header from "../components/Header";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -32,6 +32,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR"
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "ViteButNotTooMuch – Le site de ceux qui veulent aller vite… mais bien.",
+    description: "Découvrez ViteButNotTooMuch, la ressource incontournable pour ceux qui veulent aller vite… mais bien. Conseils, astuces et guides pour optimiser votre efficacité sans sacrifier la qualité.",
+    creator: "@ViteButNotTooMuch",
+    site: "@ViteButNotTooMuch"
+  },
   alternates: {
     canonical: "https://matioss.fr/"
   },
@@ -50,6 +57,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
