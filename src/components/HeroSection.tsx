@@ -34,7 +34,12 @@ export default function HeroSection() {
         <div className="md:w-1/2 relative h-72 md:h-96 w-full">
           <div className="absolute inset-0 bg-blue-600 rounded-lg opacity-10"></div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-4xl font-bold text-blue-800">Image d'illustration</span>
+            <img 
+              loading="lazy"
+              src="https://images.pexels.com/photos/7148691/pexels-photo-7148691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              alt="personne qui travaille" 
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
         </div>
       </div>

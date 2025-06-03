@@ -2,28 +2,20 @@ import Link from 'next/link';
 
 const articles = [
   {
-    id: 'qui-sommes-nous',
-    title: 'Qui sommes-nous ?',
-    description: 'Découvrez l\'histoire et la mission de ViteButNotTooMuch',
-    date: '2024-03-20',
-    image: '/images/qui-sommes-nous.jpg',
-    readTime: '5 min',
-  },
-  {
     id: 'notre-philosophie',
     title: 'Notre philosophie',
     description: 'Comment nous abordons l\'efficacité et la qualité',
-    date: '2024-03-21',
-    image: '/images/notre-philosophie.jpg',
+    date: '2025-06-02',
+    image: 'https://images.pexels.com/photos/32394846/pexels-photo-32394846/free-photo-of-couteau-equilibrant-un-oeuf-sur-fond-sombre.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     readTime: '4 min',
   },
   {
-    id: 'notre-equipe',
-    title: 'Notre équipe',
-    description: 'Rencontrez les personnes derrière ViteButNotTooMuch',
-    date: '2024-03-22',
-    image: '/images/notre-equipe.jpg',
-    readTime: '6 min',
+    id: 'le-nouveau-raal-de-la-productivite',
+    title: 'Le nouveau raal de la productivité',
+    description: 'Découvrez comment nous avons changé notre approche pour devenir plus efficaces',
+    date: '2025-06-03',
+    image: 'https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&w=600',
+    readTime: '7 min',
   },
 ];
 
